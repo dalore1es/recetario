@@ -1,0 +1,19 @@
+<html lang="es">
+<head>
+	<title>Lista de bebidas de ejemplo</title>
+	<meta charset="utf-8">
+</head>
+
+<body>
+<h1>Recetario de Bebidas</h1>
+
+{% for bebida in bebidas %}
+    <ul>
+    <li><strong> {{ bebida.nombre }} </strong></li>
+    <li> {{ bebida.ingredientes }} </li>
+    <li> {{ bebida.preparacion }} </li>
+  </ul>
+{% endfor %}
+</body>
+
+</html>
