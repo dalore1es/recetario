@@ -1,0 +1,4 @@
+recetario
+=========
+
+Django app
