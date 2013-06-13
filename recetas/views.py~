@@ -1,7 +1,13 @@
 # Create your views here.
-from recetario.models import Bebida
-from django.shortcuts import render_to_response
+from recetas.models import Receta, Comentario
+from django.contrib.auth.models import User
+from django.shortcuts import render_to_response, get_object_or_404
+from django.http import HttpResponse
 
-def lista_bebidas(request):
-    bebidas = Bebida.objects.all()
-    return render_to_response('lista_bebidas.html', {'bebidas':bebidas})
+def about(request):
+    html = "<html><body>Proyecto de ejemplo en Django</html></body>"
+    return HttpResponse(html)
+
+
+
+

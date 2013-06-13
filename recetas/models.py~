@@ -16,7 +16,7 @@ class Receta(models.Model):
     ingredientes = models.TextField(help_text='Redacta los ingredientes')
     preparacion = models.TextField(verbose_name = 'Preparación')
     imagen = models.ImageField(upload_to='recetas', verbose_name='Imagen')
-    tiempo_registro = modelsDateTimeField(auto_now=True)
+    tiempo_registro = models.DateTimeField(auto_now=True)
     usuario = models.ForeignKey(User)
 
     def __unicode__(self):
